@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List Pro</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+  <!-- 🔷 HERO -->
+  <header class="hero">
+    <div class="overlay">
+      <h1>📋 Todo List</h1>
+      <p class="subtitle">Organiza tu día como un profesional</p>
+    </div>
+  </header>
+
+  <!-- 🔷 CONTENIDO -->
+  <main class="container">
+
+    <!-- INPUT -->
+    <section class="input-section">
+      <input id="inputTarea" placeholder="Escribe una tarea...">
+      <button id="btnAgregar">Agregar</button>
+    </section>
+
+    <!-- RESUMEN -->
+    <section class="resumen">
+      <div class="card">
+        <h3>Total</h3>
+        <span id="total">0</span>
+      </div>
+
+      <div class="card">
+        <h3>Realizadas</h3>
+        <span id="realizadas">0</span>
+      </div>
+
+      <div class="card">
+        <h3>Eliminadas</h3>
+        <span id="eliminadas">0</span>
+      </div>
+    </section>
+
+    <!-- TABLA -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tarea</th>
+          <th>✔</th>
+          <th>❌</th>
+        </tr>
+      </thead>
+      <tbody id="lista"></tbody>
+    </table>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Todo List - Jhonny 🚀</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
